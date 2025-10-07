@@ -31,13 +31,14 @@
 
 ## 📁 Estrutura do Projeto
 serverless-feedback-api/
+
 ├─ src/
-│ ├─ handlers/ # Funções Lambda (create/list feedback)
-│ ├─ services/ # Lógica de negócio e acesso ao DynamoDB
-│ ├─ models/ # Tipagens TypeScript
-│ └─ utils/ # Helpers de resposta padronizada
-├─ serverless.yml # Configuração do Serverless Framework
-├─ tsconfig.json # Configuração TypeScript
+│ ├─ handlers/ 
+│ ├─ services/ 
+│ ├─ models/ 
+│ └─ utils/ 
+├─ serverless.yml 
+├─ tsconfig.json 
 ├─ package.json
 └─ README.md
 
@@ -78,4 +79,5 @@ Resposta:
 }
 
 ```
+
 
