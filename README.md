@@ -106,7 +106,13 @@ Otimizar produtividade e reduzir erros de configuração
 Isso permitiu focar na lógica de negócio e arquitetura, enquanto a IA cuidava do boilerplate.
 
 
-```
+## 👨‍💻 Autor
+Luiz Henrique Silva
+Desenvolvedor focado em Node.js, AWS e arquitetura serverless.
+
+
+
+
 
 
 
