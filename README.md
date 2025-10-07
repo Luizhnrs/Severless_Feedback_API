@@ -1,18 +1,16 @@
-﻿# 🧠 Serverless Feedback API
+Uma API serverless para coletar feedbacks de usuários de forma rápida, escalável e totalmente gerenciada na nuvem.
 
-Uma API Serverless para coleta de feedbacks, desenvolvida com Node.js, TypeScript e AWS Lambda, utilizando o Serverless Framework.
-O projeto demonstra boas práticas de desenvolvimento backend e arquitetura escalável baseada em cloud computing.
+✨ Visão Geral
+
+Este projeto demonstra o uso de Node.js, TypeScript e Serverless Framework para criar APIs modernas, escaláveis e com boas práticas de backend.
+A arquitetura é baseada em AWS Lambda, DynamoDB e Serverless Framework, ideal para projetos que precisam de baixo custo e alta disponibilidade.
 
 🚀 Funcionalidades
-
-Envio de feedbacks (mensagem, nota e nome opcional)
-
-Armazenamento no AWS DynamoDB
-
-Listagem de feedbacks registrados
-
-Infraestrutura escalável e de baixo custo com Serverless Framework
-
+Funcionalidade	Descrição
+Criar feedback	Permite enviar mensagem, nota e nome opcional
+Listar feedbacks	Retorna todos os feedbacks cadastrados
+Escalabilidade	Totalmente serverless com DynamoDB
+Fácil deploy	Configuração simples via Serverless Framework
 🧩 Tecnologias
 
 Node.js + TypeScript
@@ -23,39 +21,32 @@ AWS DynamoDB
 
 Serverless Framework
 
-UUID (geração de IDs únicos)
+UUID para identificação única dos feedbacks
 
 📁 Estrutura do Projeto
-src/
-├─ handlers/        # Funções Lambda (create/list feedback)
-├─ services/        # Comunicação com DynamoDB
-├─ models/          # Tipagens e interfaces
-├─ utils/           # Helpers (respostas padrão)
-serverless.yml      # Configuração do Serverless Framework
+serverless-feedback-api/
+├─ src/
+│  ├─ handlers/        # Funções Lambda (create/list feedback)
+│  ├─ services/        # Comunicação com DynamoDB
+│  ├─ models/          # Tipagens e interfaces
+│  ├─ utils/           # Helpers (respostas padrão)
+├─ serverless.yml      # Configuração do Serverless Framework
+├─ tsconfig.json       # Configuração TypeScript
+├─ package.json
+└─ README.md
 
-⚙️ Como Rodar Localmente
-1️⃣ Instalar dependências:
+⚙️ Setup do Projeto
+1️⃣ Instalar dependências
 npm install
 
-2️⃣ Executar localmente (API Gateway emulado):
+2️⃣ Rodar localmente
 npx serverless offline
 
-3️⃣ Fazer deploy para AWS:
+
+A API ficará disponível em http://localhost:3000.
+
+3️⃣ Fazer deploy na AWS
 npx serverless deploy
-
-🧠 Uso da Inteligência Artificial
-
-Durante o desenvolvimento, utilizei ChatGPT (IA) como apoio técnico e criativo para:
-
-Estruturar o projeto em camadas limpas (handlers, services, utils)
-
-Gerar templates de funções Lambda e configuração serverless.yml
-
-Documentar o projeto e otimizar o tempo de setup
-
-Revisar boas práticas de TypeScript + AWS SDK v3
-
-Com isso, consegui acelerar a entrega, reduzir erros de configuração e manter foco total na lógica de negócio e arquitetura.
 
 📡 Exemplos de Requisições
 Criar Feedback
@@ -64,17 +55,17 @@ POST /feedback
 
 {
   "name": "Luiz",
-  "message": "Projeto incrível, parabéns!",
+  "message": "Projeto incrível!",
   "rating": 5
 }
 
 
-Resposta:
+Resposta
 
 {
   "id": "c3a9e2d4-7f98-4c34-b2b9-ef65e4fbb0a3",
   "name": "Luiz",
-  "message": "Projeto incrível, parabéns!",
+  "message": "Projeto incrível!",
   "rating": 5,
   "createdAt": "2025-10-07T18:30:00.000Z"
 }
@@ -82,7 +73,6 @@ Resposta:
 Listar Feedbacks
 
 GET /feedback
-Resposta:
 
 [
   {
@@ -93,17 +83,32 @@ Resposta:
   }
 ]
 
+🧠 Uso da Inteligência Artificial
+
+Durante o desenvolvimento, utilizei ChatGPT para:
+
+Estruturar o projeto em camadas limpas (handlers, services, utils)
+
+Criar templates de funções Lambda e configuração serverless.yml
+
+Documentar rapidamente o projeto e gerar README inicial
+
+Otimizar produtividade e reduzir erros de configuração
+
+Isso me permitiu focar em lógica de negócio e arquitetura, enquanto a IA cuidava do boilerplate.
+
 🔮 Próximos Passos
 
-Adicionar validações e tratamento de erros personalizados
+Adicionar validações avançadas e tratamento de erros
 
-Criar um pequeno frontend React para enviar feedbacks
+Criar um frontend React para envio de feedbacks
 
-Integrar com AWS SES para alertas por e-mail (opcional)
+Integrar com AWS SES para alertas por e-mail
 
 👨‍💻 Autor
 
 Luiz Henrique Silva
-Desenvolvedor focado em unir marketing, programação e automação, com ênfase em Node.js, AWS e arquitetura serverless.
+Desenvolvedor focado em Node.js, AWS e arquitetura serverless, unindo programação e automação.
+
 📬 LinkedIn
  | GitHub
