@@ -108,7 +108,7 @@ Isso permitiu focar na lógica de negócio e arquitetura, enquanto a IA cuidava 
 
 ## 👨‍💻 Autor
 Luiz Henrique Silva
-Desenvolvedor focado em Node.js, AWS e arquitetura serverless.
+
 
 
 
