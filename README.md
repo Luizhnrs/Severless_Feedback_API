@@ -77,7 +77,36 @@ Resposta:
   "rating": 5,
   "createdAt": "2025-10-07T18:30:00.000Z"
 }
+```
+Listar Feedbacks
+
+GET /feedback
+Resposta:
+```bash
+[
+  {
+    "id": "c3a9e2d4-7f98-4c34-b2b9-ef65e4fbb0a3",
+    "message": "Muito bom!",
+    "rating": 4,
+    "createdAt": "2025-10-07T18:30:00.000Z"
+  }
+]
 
 ```
+## 🧠 Uso da Inteligência Artificial
+
+Durante o desenvolvimento, utilizei a AbacusAI para:
+
+Criar templates de funções Lambda e configuração serverless.yml
+
+Documentar rapidamente o projeto e gerar README inicial
+
+Otimizar produtividade e reduzir erros de configuração
+
+Isso permitiu focar na lógica de negócio e arquitetura, enquanto a IA cuidava do boilerplate.
+
+
+```
+
 
 
